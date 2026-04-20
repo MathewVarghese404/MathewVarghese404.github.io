@@ -1,0 +1,17 @@
+{
+  "name": "Mathew Varghese Portfolio",
+  "short_name": "MV Portfolio",
+  "description": "Portfolio of Mathew Varghese - Gamer, Hacker, Creator.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#08080f",
+  "theme_color": "#08080f",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

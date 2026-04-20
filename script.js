@@ -538,4 +538,24 @@
     // ===== INITIAL SCROLL CHECK =====
     handleScroll();
 
+    // ===== PWA SERVICE WORKER REGISTRATION =====
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function (err) {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+
+    // ===== PREVENT DEFAULT PWA INSTALL PROMPT =====
+    window.addEventListener('beforeinstallprompt', function (e) {
+        // Prevent the mini-infobar from appearing on mobile
+        e.preventDefault();
+        // Stash the event so it can be triggered later if desired
+        window.deferredPrompt = e;
+        console.log('PWA installation prompt blocked as requested.');
+    });
+
 })();
