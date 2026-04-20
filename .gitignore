@@ -29,6 +29,7 @@ netlify/functions/tracking-john-varghese-9d538d077286.json
 *.key
 *.cert
 *.p12
+OBFUSCATE_KEY.md
 
 # ============================================================
 # Logs
