@@ -330,11 +330,39 @@ body.cursor-ready .cursor-outline {
     letter-spacing: 0.05em;
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: var(--space-sm);
     cursor: pointer;
-    transition: color var(--trans-fast);
+    transition: opacity var(--trans-fast);
+    text-decoration: none;
 }
 
+.nav-logo:hover {
+    opacity: 0.85;
+}
+
+.nav-logo-img {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.5));
+    transition: filter var(--trans-base);
+    flex-shrink: 0;
+}
+
+.nav-logo:hover .nav-logo-img {
+    filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.85));
+}
+
+.nav-logo-name {
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+/* Legacy bracket classes kept for backward-compat */
 .logo-bracket {
     color: var(--accent-cyan);
     font-weight: 300;

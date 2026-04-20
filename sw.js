@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mv-portfolio-v1';
+const CACHE_NAME = 'mv-portfolio-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -6,7 +6,9 @@ const ASSETS_TO_CACHE = [
   '/script.js',
   '/chatbot.js',
   '/icon.svg',
-  '/manifest.json'
+  '/manifest.json',
+  '/sitemap.xml',
+  '/robots.txt'
 ];
 
 // Install event: cache core assets
