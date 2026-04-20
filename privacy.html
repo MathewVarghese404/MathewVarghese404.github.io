@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Mathew Varghese</title>
+    <meta name="description" content="Privacy Policy detailing data collection and usage on Mathew Varghese's portfolio.">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%2308080f' width='100' height='100' rx='16'/%3E%3Ctext x='50' y='65' text-anchor='middle' fill='%2300e5ff' font-family='sans-serif' font-weight='bold' font-size='44'%3EMV%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Archivo:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-page {
+            padding-top: calc(var(--space-4xl) + 80px);
+            padding-bottom: var(--space-4xl);
+            background: radial-gradient(circle at top, rgba(0, 229, 255, 0.05) 0%, transparent 50%);
+        }
+
+        .legal-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        .legal-header {
+            margin-bottom: var(--space-2xl);
+            position: relative;
+        }
+
+        .legal-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-family: var(--font-heading);
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--accent-cyan);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: var(--space-md);
+        }
+
+        .legal-title {
+            font-family: var(--font-heading);
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.1;
+            margin-bottom: var(--space-sm);
+        }
+
+        .legal-meta {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .legal-content {
+            background: rgba(19, 19, 37, 0.4);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: clamp(var(--space-lg), 5vw, var(--space-2xl));
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .legal-content h2 {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            color: var(--accent-cyan);
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-md);
+        }
+
+        .legal-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .legal-content p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+        }
+
+        .legal-content ul {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+            padding-left: var(--space-lg);
+        }
+
+        .legal-content li {
+            margin-bottom: 8px;
+        }
+
+        .legal-content a {
+            color: var(--accent-purple);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .legal-content a:hover {
+            color: var(--accent-cyan);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Home">
+                <span class="logo-bracket">[</span><span class="logo-text">MV</span><span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+        <div class="mobile-menu-links">
+            <a href="index.html#about" class="mobile-link">About</a>
+            <a href="index.html#skills" class="mobile-link">Skills</a>
+            <a href="index.html#projects" class="mobile-link">Projects</a>
+            <a href="index.html#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="legal-page">
+        <div class="legal-container reveal">
+            <div class="legal-header">
+                <span class="legal-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    PRIVACY
+                </span>
+                <h1 class="legal-title">Privacy Policy</h1>
+                <p class="legal-meta">Last Updated: April 20, 2026</p>
+            </div>
+
+            <div class="legal-content">
+                <h2>1. Information Collection</h2>
+                <p>When you interact with this portfolio, particularly the Contact form, the following information is securely collected and sent to me for the sole purpose of responding to your inquiries:</p>
+                <ul>
+                    <li>Your Name and Email Address</li>
+                    <li>The subject and content of your message</li>
+                    <li>Basic device telemetry (OS, Browser, Screen Size, Connection Type) to optimize future UI designs</li>
+                    <li>Approximate location/IP via <code>ipapi.co</code> (only to detect spam and triage urgent professional inquiries)</li>
+                </ul>
+
+                <h2>2. How I Use Your Data</h2>
+                <p>The information collected is used exclusively to:</p>
+                <ul>
+                    <li>Read and respond to your direct messages.</li>
+                    <li>Understand what devices people use to view my 3D/GL architectures so I can optimize performance.</li>
+                    <li>Prevent spam or malicious submissions in the messaging system.</li>
+                </ul>
+                <p>I do not share, sell, distribute, or lease any of your personal information to third parties unless required to do so by law.</p>
+
+                <h2>3. Security Measures</h2>
+                <p>As someone deeply interested in Cybersecurity and Ethical Hacking (#HackForGood), I take the security of your data seriously. All communications between the active UI and the backend Google Forms architecture occur over secure HTTPS connections. The data submitted is securely vaulted within my private workspace.</p>
+
+                <h2>4. Third-Party Services</h2>
+                <p>This site utilizes a few external services for aesthetics and functionality:</p>
+                <ul>
+                    <li><strong>Google Fonts:</strong> For typography caching.</li>
+                    <li><strong>Google Forms:</strong> As a headless backend for processing incoming messages.</li>
+                    <li><strong>ipapi.co:</strong> For secure, stateless IP lookups when submitting the form.</li>
+                </ul>
+                <p>Please refer to their respective privacy policies to understand how they handle data traversing their networks.</p>
+
+                <h2>5. Cookies and Tracking</h2>
+                <p>This portfolio itself does not deploy any invasive cookies or persistent tracking pixels. It is designed to be a lightweight, secure experience. Any temporary data utilized (like your cursor position or scroll depth) is handled locally by visual scripts and discarded instantly when you navigate away.</p>
+
+                <h2>6. Your Rights</h2>
+                <p>If you have previously submitted a message and would like me to permanently purge your contact details from my private database, please feel free to send a follow-up request via the Contact page or direct email, and I will execute the deletion immediately.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" style="margin-top: var(--space-4xl)">
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div style="display: flex; gap: 16px; margin-bottom: 8px; justify-content: center;">
+                    <a href="terms.html" style="color: var(--text-muted); font-size: 12px; text-decoration: none;">Terms & Conditions</a>
+                    <a href="privacy.html" style="color: var(--text-muted); font-size: 12px; text-decoration: none;">Privacy Policy</a>
+                </div>
+                <p class="footer-credit">Crafted with code and caffeine by <strong>Mathew Varghese</strong></p>
+                <p class="footer-copy">&copy; <span class="current-year">2026</span> Mathew Varghese. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Disable preloader logic locally for text pages
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>

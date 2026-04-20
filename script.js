@@ -24,6 +24,7 @@
     let progress = 0;
 
     function advanceLoader() {
+        if (!loaderStatus || !loaderProgress) return;
         if (loaderStep < loaderMessages.length) {
             loaderStatus.textContent = loaderMessages[loaderStep];
             loaderStep++;
@@ -36,21 +37,28 @@
         }
     }
 
-    advanceLoader();
+    if (preloader) {
+        advanceLoader();
+    }
 
     window.addEventListener('load', function () {
         // Ensure minimum display time
-        setTimeout(function () {
-            progress = 100;
-            loaderProgress.style.width = '100%';
-            loaderStatus.textContent = 'Ready.';
+        if (preloader && loaderProgress && loaderStatus) {
             setTimeout(function () {
-                preloader.classList.add('hidden');
-                document.body.classList.remove('loading');
-                // Trigger hero animations
-                document.body.classList.add('loaded');
-            }, 400);
-        }, 1800);
+                progress = 100;
+                loaderProgress.style.width = '100%';
+                loaderStatus.textContent = 'Ready.';
+                setTimeout(function () {
+                    preloader.classList.add('hidden');
+                    document.body.classList.remove('loading');
+                    // Trigger hero animations
+                    document.body.classList.add('loaded');
+                }, 400);
+            }, 1800);
+        } else {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loading');
+        }
     });
 
     document.body.classList.add('loading');
@@ -519,6 +527,13 @@
             });
         });
     }
+
+    // ===== DYNAMIC YEAR IN FOOTER =====
+    const currentYearElements = document.querySelectorAll('.current-year');
+    const currentYear = new Date().getFullYear();
+    currentYearElements.forEach(function (el) {
+        el.textContent = currentYear;
+    });
 
     // ===== INITIAL SCROLL CHECK =====
     handleScroll();

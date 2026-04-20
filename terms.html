@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | Mathew Varghese</title>
+    <meta name="description" content="Terms and Conditions for Mathew Varghese's portfolio and services.">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%2308080f' width='100' height='100' rx='16'/%3E%3Ctext x='50' y='65' text-anchor='middle' fill='%2300e5ff' font-family='sans-serif' font-weight='bold' font-size='44'%3EMV%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Archivo:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-page {
+            padding-top: calc(var(--space-4xl) + 80px);
+            padding-bottom: var(--space-4xl);
+            background: radial-gradient(circle at top, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
+        }
+
+        .legal-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        .legal-header {
+            margin-bottom: var(--space-2xl);
+            position: relative;
+        }
+
+        .legal-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-family: var(--font-heading);
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--accent-magenta);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: var(--space-md);
+        }
+
+        .legal-title {
+            font-family: var(--font-heading);
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.1;
+            margin-bottom: var(--space-sm);
+        }
+
+        .legal-meta {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .legal-content {
+            background: rgba(19, 19, 37, 0.4);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: clamp(var(--space-lg), 5vw, var(--space-2xl));
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .legal-content h2 {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            color: var(--accent-cyan);
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-md);
+        }
+
+        .legal-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .legal-content p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+        }
+
+        .legal-content ul {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+            padding-left: var(--space-lg);
+        }
+
+        .legal-content li {
+            margin-bottom: 8px;
+        }
+
+        .legal-content a {
+            color: var(--accent-purple);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .legal-content a:hover {
+            color: var(--accent-cyan);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Home">
+                <span class="logo-bracket">[</span><span class="logo-text">MV</span><span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+        <div class="mobile-menu-links">
+            <a href="index.html#about" class="mobile-link">About</a>
+            <a href="index.html#skills" class="mobile-link">Skills</a>
+            <a href="index.html#projects" class="mobile-link">Projects</a>
+            <a href="index.html#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="legal-page">
+        <div class="legal-container reveal">
+            <div class="legal-header">
+                <span class="legal-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    LEGAL
+                </span>
+                <h1 class="legal-title">Terms &amp; Conditions</h1>
+                <p class="legal-meta">Last Updated: April 20, 2026</p>
+            </div>
+
+            <div class="legal-content">
+                <h2>1. Acceptance of Terms</h2>
+                <p>Welcome to my portfolio! By accessing or using this website, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use this website.</p>
+
+                <h2>2. Intellectual Property</h2>
+                <p>All content on this website, including but not limited to source code, text, graphics, logos, images, UI/UX designs, and software, is the intellectual property of Mathew Varghese unless otherwise stated. It is protected by applicable copyright and trademark laws.</p>
+                <p>You may not reproduce, distribute, or create derivative works from this content without explicit written permission. The projects showcased here are a mix of personal initiatives, open-source work, and client projects (where permission is granted to display).</p>
+
+                <h2>3. Use License</h2>
+                <p>Permission is granted to temporarily view the materials on this website for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+                <ul>
+                    <li>Modify or copy the core 3D models or UI animations to use as your own;</li>
+                    <li>Use the materials for any commercial purpose without prior consent;</li>
+                    <li>Attempt to decompile or reverse engineer any software contained on the website;</li>
+                    <li>Remove any copyright or other proprietary notations from the materials.</li>
+                </ul>
+
+                <h2>4. Disclaimer</h2>
+                <p>The materials on this website are provided on an 'as is' basis. I make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+                <p>Furthermore, while I am passionate about cybersecurity (#HackForGood), nothing on this website should be construed as an invitation or authorization to test, attack, or exploit systems without explicit, legal consent from their respective owners.</p>
+
+                <h2>5. Limitations</h2>
+                <p>In no event shall Mathew Varghese be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on this website.</p>
+
+                <h2>6. External Links</h2>
+                <p>This website may contain links to external sites (such as GitHub, LinkedIn, or the Varghese Brothers' portfolios). I have not reviewed all of the sites linked to this website and am not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement.</p>
+
+                <h2>7. Contact</h2>
+                <p>If you have any questions about these Terms and Conditions, please contact me through the <a href="index.html#contact">Contact</a> section of the portfolio.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" style="margin-top: var(--space-4xl)">
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <p class="footer-credit">Crafted with code and caffeine by <strong>Mathew Varghese</strong></p>
+                <p class="footer-copy">&copy; <span class="current-year">2026</span> Mathew Varghese. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Disable preloader logic locally for text pages
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>

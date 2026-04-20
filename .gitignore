@@ -130,3 +130,6 @@ reference/
 coverage/
 .nyc_output/
 *.lcov
+
+node_modules/
+.env
