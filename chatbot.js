@@ -18,7 +18,9 @@
     if (!chatToggle || !chatWindow) return;
 
     // Configuration
-    const API_URL = '/api/chat';
+    // If hosting frontend on GitHub Pages, replace this with your Vercel/Serverless deployment URL
+    // Example: const API_URL = 'https://mathew-portfolio.vercel.app/api/chat';
+    const API_URL = 'https://YOUR_VERCEL_PROJECT.vercel.app/api/chat';
 
     // Rate Limiting & State
     let isWaitingForResponse = false;
