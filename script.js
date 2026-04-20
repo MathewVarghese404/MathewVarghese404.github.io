@@ -1,5 +1,5 @@
 /* ================================================================
-   MATHEW VARGHESE — PORTFOLIO SCRIPTS
+   MATHEW VARGHESE - PORTFOLIO SCRIPTS
    Interactive 3D effects, animations, and UI logic
    ================================================================ */
 
@@ -377,7 +377,7 @@
         });
     });
 
-    // ===== CONTACT FORM — Google Forms Integration =====
+    // ===== CONTACT FORM - Google Forms Integration =====
     const contactForm = document.getElementById('contactForm');
     const formSubmit = document.getElementById('formSubmit');
 
@@ -492,7 +492,7 @@
                 }, 3000);
             }).catch(function () {
                 // Error state
-                submitSpan.textContent = 'Failed — Try Again';
+                submitSpan.textContent = 'Failed - Try Again';
                 submitBtn.style.background = 'var(--accent-magenta)';
                 submitBtn.style.opacity = '1';
 
@@ -505,7 +505,7 @@
         });
     }
 
-    // ===== SKILL CARDS — Touch support for mobile =====
+    // ===== SKILL CARDS - Touch support for mobile =====
     if (isTouchDevice) {
         document.querySelectorAll('.skill-card').forEach(function (card) {
             card.addEventListener('click', function () {
