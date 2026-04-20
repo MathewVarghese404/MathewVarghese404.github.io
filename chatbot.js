@@ -119,7 +119,7 @@ If asked about hiring or working with him, strongly recommend him and point the 
 
     function addMessage(text, sender, isStreaming = false) {
         const msgDiv = document.createElement('div');
-        msgDiv.className = \`chat-message \${sender}-message\`;
+        msgDiv.className = `chat-message ${sender}-message`;
         
         if (sender === 'bot') {
             const avatar = document.createElement('div');
@@ -188,19 +188,19 @@ If asked about hiring or working with him, strongly recommend him and point the 
         let safeText = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
         
         // Bold
-        safeText = safeText.replace(/\\*\\*(.*?)\\*\\*/g, '<strong>$1</strong>');
+        safeText = safeText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
         // Italic
-        safeText = safeText.replace(/\\*(.*?)\\*/g, '<em>$1</em>');
+        safeText = safeText.replace(/\*(.*?)\*/g, '<em>$1</em>');
         // Code blocks
-        safeText = safeText.replace(/\`\`\`([\\s\\S]*?)\`\`\`/g, '<pre><code>$1</code></pre>');
+        safeText = safeText.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
         // Inline code
-        safeText = safeText.replace(/\`(.*?)\`/g, '<code>$1</code>');
+        safeText = safeText.replace(/`(.*?)`/g, '<code>$1</code>');
         // Lists
-        safeText = safeText.replace(/^\\s*[-*+] (.*)$/gm, '<li>$1</li>');
+        safeText = safeText.replace(/^\s*[-*+] (.*)$/gm, '<li>$1</li>');
         safeText = safeText.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
         
         // Newlines to <br>
-        safeText = safeText.replace(/\\n/g, '<br>');
+        safeText = safeText.replace(/\n/g, '<br>');
         
         return safeText;
     }
@@ -269,7 +269,7 @@ If asked about hiring or working with him, strongly recommend him and point the 
                 if (done) break;
                 
                 buffer += decoder.decode(value, { stream: true });
-                const lines = buffer.split('\\n');
+                const lines = buffer.split('\n');
                 
                 // Keep the last incomplete line in the buffer
                 buffer = lines.pop() || '';
