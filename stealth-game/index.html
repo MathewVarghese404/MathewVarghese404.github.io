@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON GHOST | Stealth Assassin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="ui-hud">
+            <div class="hud-top">
+                <div class="hud-item health">
+                    <div class="label">INTEGRITY</div>
+                    <div class="bar-container">
+                        <div id="health-bar" class="bar"></div>
+                    </div>
+                </div>
+                <div class="hud-item xp">
+                    <div class="label">PROGRESSION</div>
+                    <div class="bar-container">
+                        <div id="xp-bar" class="bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hud-bottom">
+                <div id="level-display">NODE: 01</div>
+                <div id="score-display">TERMINATIONS: 00</div>
+            </div>
+        </div>
+
+        <div id="menu-overlay" class="overlay">
+            <div class="glitch-title" data-text="NEON GHOST">NEON GHOST</div>
+            <p class="subtitle">STEALTH // ASSASSIN // PROTOCOL</p>
+            <button id="start-btn">INITIALIZE</button>
+            <div class="controls">
+                <p>WASD - MOVE</p>
+                <p>SHIFT - SLOW/STEALTH</p>
+                <p>REACH TARGET TO NEUTRALIZE</p>
+            </div>
+        </div>
+
+        <div id="upgrade-overlay" class="overlay hidden">
+            <h1>PROTOCOL UPGRADE</h1>
+            <p class="subtitle">SELECT ENHANCEMENT</p>
+            <div id="upgrade-options">
+                <!-- Upgrade cards injected here -->
+            </div>
+        </div>
+
+        <div id="game-over-overlay" class="overlay hidden">
+            <h1 class="critical">SYSTEM FAILURE</h1>
+            <p id="final-score">Terminations: 0</p>
+            <button id="restart-btn">REBOOT</button>
+        </div>
+
+        <div id="win-overlay" class="overlay hidden">
+            <h1 class="success">NODE CLEARED</h1>
+            <button id="next-level-btn">NEXT NODE</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
